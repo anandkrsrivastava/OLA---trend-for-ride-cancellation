@@ -44,4 +44,5 @@ Lift Types by Resort (Stacked Bar Chart) Stacked bar chart showing: Gondola lift
 • Business Impact & Insights Marketing Optimization: Travel agencies can use this dashboard to identify key selling points for different demographics (e.g., child-friendly resorts or expert terrain). Strategic Expansion: Resort developers can spot underdeveloped regions with high potential. Vacation Planning: Tourists can plan trips based on slope availability, elevation, and terrain difficulty. Regional Analysis: Governments and tourism bodies can analyze competitiveness by region.
 
 6. Screenshots / Demos
-Show what the dashboard looks like. - https://github.com/anandkrsrivastava/OLA---trend-for-ride-cancellation/blob/main/Screenshot%202025-10-04%20193141.png
+Show what the dashboard looks like. -
+![Dashboard_Preview](https://github.com/anandkrsrivastava/OLA---trend-for-ride-cancellation/blob/main/Screenshot%202025-10-04%20193141.png)
