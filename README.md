@@ -1,48 +1,92 @@
-# OLA_trend_for_ride_cancellation
-Recommended Structure and Order
-1. Project Title / Headline
-A concise, descriptive name for the dashboard. Example: ❄️ Snowy Analytics: Global Ski Resort Insights Dashboard A dynamic, interactive data visualization tool built to explore ski resort data worldwide—focusing on regional comparisons, resort attributes, terrain complexity, and skier suitability.
+🚖 Turning Data into Decisions: OLA Ride Cancellation & Performance Dashboard
 
-2. Short Description / Purpose
-1–2 sentences explaining what the dashboard does and why it exists.
+A dynamic Power BI dashboard designed to analyze ride booking patterns, cancellations, and revenue distribution—helping improve mobility decisions and enhance customer experience for smarter operations.
+🎯 Short Description / Purpose
 
-Example: The Snowy Analytics Dashboard is a visually engaging and analytical Power BI report designed to help users explore and compare over 499 ski resorts across 38 countries and 5 continents. The dashboard focuses on highlighting major ski resort features like summer skiing availability, night skiing, lift types, and slope difficulty. This tool is intended for use by tourism analysts, winter sports enthusiasts, travel companies, and data-driven strategists who seek to understand trends and characteristics of ski resorts globally.
+The OLA Analytics Dashboard provides a comprehensive view of key business metrics, including booking trends, ride cancellations, payment modes, and customer behavior. It empowers stakeholders to understand operational challenges, identify cancellation causes, and optimize strategies for better driver and customer satisfaction.
+  🧰 Tech Stack
 
-3. Tech Stack
-List the key technologies used to build the dashboard.
+The dashboard was built using the following tools and technologies:
 
-Example: The dashboard was built using the following tools and technologies:
-• 📊 Power BI Desktop – Main data visualization platform used for report creation.
-• 📂 Power Query – Data transformation and cleaning layer for reshaping and preparing the data.
-• 🧠 DAX (Data Analysis Expressions) – Used for calculated measures, dynamic visuals, and conditional logic.
-• 📝 Data Modeling – Relationships established among tables (resorts, snow, and data_dictionary) to enable cross-filtering and aggregation.
-• 📁 File Format – .pbix for development and .png for dashboard previews.
+📊 Power BI Desktop – for interactive data visualization and report building.
 
-4. Data Source
-More info on where the data comes from and how it’s structured Example: Source: Ski-resort-stats.com & NASA Earth Observations.
+🧹 Power Query – for data cleaning, transformation, and shaping.
 
-Data on ~500 ski resorts around the world, including details on their location, prices, slopes, lifts, and seasons, as well as a complementary table with the snow cover around the world for each month of 2022.
+🧠 DAX (Data Analysis Expressions) – for calculated measures, KPIs, and dynamic filtering.
 
-5. Features / Highlights
-The best dashboard explanation format. • Business problem • Goal of the dashboard • Walk through of key visuals (briefly!) • Business impact & Insights
+🧾 Data Modeling – relationships defined between booking, customer, and payment tables for cross-analysis.
 
-Example: • Business Problem The global ski tourism industry generates billions in revenue, yet travelers, tour operators, and analysts often lack an intuitive way to compare resorts across countries.
+📁 File Format: .pbix (Power BI Project File) and .png (dashboard preview).
 
-Key questions such as: Which regions offer the most family-friendly or expert-level skiing? Where is summer skiing available? What countries have the most well-equipped resorts? … are difficult to answer quickly with raw data.
+📂 Data Source
 
-• Goal of the Dashboard To deliver an interactive visual tool that: Enables users to explore ski resorts globally. Supports decisions such as vacation planning, regional marketing, or infrastructure investment. Uncovers trends in terrain, accessibility, and tourism capacity by region and resort.
+Source: Simulated dataset of OLA ride bookings and cancellations.
+The dataset includes fields such as:
 
-• Walkthrough of Key Visuals
+Booking_ID, Customer_ID, Driver_ID
 
-Key KPIs (Top Left) Total number of resorts: 499 Resorts with summer skiing: 29 Resorts with night skiing: 204 Child-friendly resorts: 495 Countries covered: 38 Continents represented: 5
-Continent Filter Panel An interactive slicer lets users filter all visuals by selected continents, such as Europe or Asia.
-Top Countries with Most Resorts (Bar Chart) Bar chart ranks countries like Austria, France, and the U.S. by number of ski resorts.
-Slopes by Resort (Line Chart) Displays the distribution of slope types (beginner, intermediate, expert, and total). Helps identify which resorts favor beginners vs. experts.
-Resorts by Skill Level (Dual Line Charts) Two line visuals side by side: one for resorts that cater to beginners, another for experts—allowing skill-level segmentation.
-Elevation Stats (Grouped Bar Chart) Compare the highest and lowest elevation points of resorts to understand terrain steepness and potential snow quality.
-Lift Types by Resort (Stacked Bar Chart) Stacked bar chart showing: Gondola lifts Chair lifts Surface lifts Total lifts This helps users gauge resort infrastructure and capacity.
-• Business Impact & Insights Marketing Optimization: Travel agencies can use this dashboard to identify key selling points for different demographics (e.g., child-friendly resorts or expert terrain). Strategic Expansion: Resort developers can spot underdeveloped regions with high potential. Vacation Planning: Tourists can plan trips based on slope availability, elevation, and terrain difficulty. Regional Analysis: Governments and tourism bodies can analyze competitiveness by region.
+Booking_Status (Success, Cancelled by Driver, Cancelled by Customer, Driver Not Found)
 
-6. Screenshots / Demos
+Payment_Method (Cash, UPI, Credit/Debit Card)
+
+Booking_Value, Ride_Distance, and Ratings.
+
+Data covers booking trends between 07 July 2024 – 31 July 2024 for analytical insights into customer and driver behavior.
+
+💡 Features / Highlights
+• Business Problem
+
+Ride cancellations directly impact revenue, customer retention, and driver efficiency. Understanding the underlying causes is crucial for reducing cancellations and improving ride success rates.
+
+• Goal of the Dashboard
+
+To create an interactive and analytical visualization that:
+
+Tracks booking success vs. cancellations.
+
+Analyzes revenue across payment methods.
+
+Evaluates ride volume trends over time.
+
+Identifies top-performing customers and operational patterns.
+
+📊 Walkthrough of Key Visuals
+
+Overall Overview Page
+
+KPIs: Displays Total Bookings (53,222) and Total Booking Value (18M).
+
+Pie Chart: Shows booking status distribution — 62.03% successful rides, 17.92% canceled by customers, 10.13% canceled by drivers, and 9.92% driver not found.
+
+Line Chart: Illustrates ride volume trends over time, highlighting daily booking fluctuations.
+
+Revenue Page
+
+Bar Chart: Visualizes revenue by payment method, showing cash and UPI as the most preferred options.
+
+Customer Table: Lists top 5 customers based on booking value.
+
+Trend Graph: Depicts total ride distance per day to evaluate ride performance consistency.
+
+Filter Panel:
+
+Allows dynamic selection by date range (07–31 July 2024) for time-based analysis.
+
+💼 Business Impact & Insights
+
+📈 Operational Insights: Identified that ~38% of total bookings faced cancellation issues, primarily driver unavailability and customer cancellations.
+
+💵 Revenue Optimization: Found that cash and UPI contribute to over 90% of total booking value, indicating preferred transaction methods.
+
+🚘 Customer Retention: Top customers contribute significantly to total revenue—suggesting potential loyalty programs or targeted offers.
+
+🧭 Strategic Improvement: Insights can be used to enhance driver allocation algorithms and improve real-time ride confirmations.
+
+🌟 Key Takeaway
+
+This Power BI dashboard demonstrates how data analytics can transform raw booking data into actionable insights—helping mobility companies like OLA enhance decision-making, operational efficiency, and customer satisfaction.
+
+
+Screenshots / Demos
 Show what the dashboard looks like. -
 ![Dashboard_Preview](https://github.com/anandkrsrivastava/OLA---trend-for-ride-cancellation/blob/main/Screenshot%202025-10-04%20193141.png)
